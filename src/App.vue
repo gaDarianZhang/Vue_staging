@@ -1,65 +1,60 @@
 <template>
-  <div class="todo-container">
-    <div class="todo-wrap">
-      
-      
-      
+  <div class="container">
+    <div class="wrapper">
+      <Header/>
+      <List/>
+      <Footer/>
     </div>
   </div>
 </template>
 
 <script>
-
-  import Fotter from './components/Footer.vue'
+  import Header from './components/Header'
+  import Footer from './components/Footer.vue'
   import List from './components/List.vue'
   export default {
-
+    components:{Header,Footer,List}
   }
 </script>
 
 <style>
-/*base*/
-body {
-  background: #fff;
-}
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    background-color: rgb(221, 210, 181);
+  }
+  ul,li{
+    list-style: none;
+    
+  }
+  .btn{
+    padding: 0 7px;
+    height: 28px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(230, 40, 40);
+    cursor: pointer;
+    color: rgb(248, 252, 255);
+  }
+  .btn:hover{
+    background-color: rgb(194, 34, 34);
+  }
+  .btn:active{
+    box-shadow: inset 1px 1px 6px 2px rgba(104, 17, 17, 0.3);
+  }
 
-.btn {
-  display: inline-block;
-  padding: 4px 12px;
-  margin-bottom: 0;
-  font-size: 14px;
-  line-height: 20px;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-  border-radius: 4px;
-}
-
-.btn-danger {
-  color: #fff;
-  background-color: #da4f49;
-  border: 1px solid #bd362f;
-}
-
-.btn-danger:hover {
-  color: #fff;
-  background-color: #bd362f;
-}
-
-.btn:focus {
-  outline: none;
-}
-
-.todo-container {
-  width: 600px;
-  margin: 0 auto;
-}
-.todo-container .todo-wrap {
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
+  .container{
+    width: 600px;
+    /* height: 100px; */
+    margin: 100px auto 0;
+    background-color: rgb(247, 239, 239);
+  }
+  .container .wrapper{
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
 
 </style>

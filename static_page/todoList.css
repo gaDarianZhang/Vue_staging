@@ -1,0 +1,88 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: rgb(221, 210, 181);
+}
+ul,li{
+  list-style: none;
+  
+}
+.btn{
+  padding: 0 7px;
+  height: 28px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(230, 40, 40);
+  cursor: pointer;
+  color: rgb(248, 252, 255);
+}
+.btn:hover{
+  background-color: rgb(194, 34, 34);
+}
+.btn:active{
+  box-shadow: inset 1px 1px 6px 2px rgba(104, 17, 17, 0.3);
+}
+
+.container{
+  width: 600px;
+  /* height: 100px; */
+  margin: 100px auto 0;
+  background-color: rgb(247, 239, 239);
+}
+.container .wrapper{
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+/* header */
+.header input{
+  box-sizing: border-box;
+  width: 100%;
+  height: 35px;
+  border: 1px solid rgb(209, 202, 202);
+  border-radius: 5px;
+  padding: 0 7px;
+  outline: none;
+  font-size: 15px;
+}
+
+.header input:focus{
+  box-shadow: 0px 0px 5px 3px rgb(110, 182, 211,.3);
+}
+
+/* List */
+.list-wrapper{
+
+  border: 1px solid rgb(209, 202, 202);
+  border-bottom: none;
+  margin: 20px 0;
+  border-radius: 5px;
+
+}
+
+/* item */
+.list-wrapper li{
+  height: 35px;
+  border-bottom: 1px solid rgb(209, 202, 202);
+  line-height: 35px;
+  padding: 0 7px;
+}
+.list-wrapper li:last-of-type{
+  border-radius: 5px;
+}
+.list-wrapper li button{
+  float: right;
+  margin-top: 3px;
+  display: none;
+}
+
+/* footer */
+.footer{
+  display: flex;
+  height: 40px;
+  align-items: center;
+  justify-content: space-between;
+}

@@ -1,77 +1,64 @@
 <template>
-  <ul class="todo-main">
-    <li>
-      <label>
-        <input type="checkbox"/>
-        <span>xxxxx</span>
-      </label>
-      <button class="btn btn-danger" style="display:none">删除</button>
-    </li>
-    <li>
-      <label>
-        <input type="checkbox"/>
-        <span>yyyy</span>
-      </label>
-      <button class="btn btn-danger" style="display:none">删除</button>
-    </li>
-  </ul>
+  <div class="list-wrapper">
+    <ul>
+      <li>
+        <label>
+          <input type="checkbox">
+          <span>喝酒</span>
+        </label>
+        <button class="btn">删除</button>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox">
+          <span>喝酒</span>
+        </label>
+        <button class="btn">删除</button>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox">
+          <span>喝酒</span>
+        </label>
+        <button class="btn">删除</button>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script>
-export default {
+  export default {
 
-}
+  }
 </script>
 
 <style>
-/*main*/
-.todo-main {
-  margin-left: 0px;
-  border: 1px solid #ddd;
-  border-radius: 2px;
-  padding: 0px;
-}
+  /* List */
+  .list-wrapper{
 
-.todo-empty {
-  height: 40px;
-  line-height: 40px;
-  border: 1px solid #ddd;
-  border-radius: 2px;
-  padding-left: 5px;
-  margin-top: 10px;
-}
-/*item*/
-li {
-  list-style: none;
-  height: 36px;
-  line-height: 36px;
-  padding: 0 5px;
-  border-bottom: 1px solid #ddd;
-}
+    border: 1px solid rgb(209, 202, 202);
+    border-bottom: none;
+    margin: 20px 0;
+    border-radius: 5px;
 
-li label {
-  float: left;
-  cursor: pointer;
-}
+  }
 
-li label li input {
-  vertical-align: middle;
-  margin-right: 6px;
-  position: relative;
-  top: -1px;
-}
-
-li button {
-  float: right;
-  display: none;
-  margin-top: 3px;
-}
-
-li:before {
-  content: initial;
-}
-
-li:last-child {
-  border-bottom: none;
-}
+  /* item */
+  .list-wrapper li{
+    height: 35px;
+    border-bottom: 1px solid rgb(209, 202, 202);
+    line-height: 35px;
+    padding: 0 7px;
+  }
+  .list-wrapper li:last-of-type{
+    border-radius: 5px;
+  }
+  .list-wrapper li input{
+    margin-right: 5px;
+  }
+  .list-wrapper li button{
+    float: right;
+    margin-top: 3px;
+    display: none;
+  }
 </style>
