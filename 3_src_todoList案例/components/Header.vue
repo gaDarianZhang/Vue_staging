@@ -1,12 +1,16 @@
 <template>
   <div class="header">
-    <input type="text">
+    <input 
+      type="text"
+      @keyup.enter="addItem($event)"
+      placeholder="请输入内容"
+    >
   </div>
 </template>
 
 <script>
   export default {
-
+    props:["addItem"]
   }
 </script>
 
